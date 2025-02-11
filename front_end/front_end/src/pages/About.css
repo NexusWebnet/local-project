@@ -1,0 +1,74 @@
+.about {
+    padding: 100px 50px;
+    background-color: #111;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .about-content {
+    max-width: 1000px; /* Increase max width for larger content area */
+    display: flex; /* Use flexbox for horizontal alignment */
+    align-items: center; /* Center items vertically */
+  }
+  
+  .about-image {
+    flex: 1; /* Allow image container to take up one part */
+    margin-right: 30px; /* Space between image and text */
+  }
+  
+  .about-image img {
+    width: 100%; /* Make the image responsive */
+    max-width: 400px; /* Set a max-width for the image to make it bigger */
+    border-radius: 5px; /* Optional: add rounded corners */
+  }
+  
+  .about-text {
+    flex: 2; /* Allow text container to take up two parts */
+    text-align: left; /* Align text to the left */
+  }
+  
+  .about-title {
+    font-size: 4rem;
+    margin-bottom: 20px;
+    font-weight: bold;
+  }
+  
+  .about-description {
+    font-size: 1.2rem;
+    color: #aaa;
+    line-height: 1.8;
+    margin-bottom: 20px;
+  }
+  
+  .about-description:first-of-type {
+    margin-top: 40px;
+  }
+  
+  @media (max-width: 768px) {
+    .about {
+      padding: 80px 20px;
+      flex-direction: column; /* Stack items on smaller screens */
+      align-items: center; /* Center align items */
+    }
+  
+    .about-content {
+      flex-direction: column; /* Stack image and text */
+      align-items: center; /* Center items */
+    }
+  
+    .about-image {
+      margin-right: 0; /* Remove margin on smaller screens */
+      margin-bottom: 20px; /* Add bottom margin */
+    }
+  
+    .about-title {
+      font-size: 3rem;
+    }
+  
+    .about-description {
+      font-size: 1rem;
+    }
+  }
+  

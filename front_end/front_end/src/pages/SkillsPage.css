@@ -1,0 +1,94 @@
+/* General styling for the Skills Page */
+.skills-page {
+    padding: 50px 20px;
+    background-color: #f5f5f5;
+    text-align: center;
+    color: #2c3e50;
+  }
+  
+  /* Heading styles */
+  .skills-page h2 {
+    font-size: 2.8rem;
+    margin-bottom: 20px;
+    color: #34495e;
+  }
+  
+  /* Paragraph styling for introductory text */
+  .skills-page p {
+    font-size: 1.2rem;
+    margin-bottom: 40px;
+    line-height: 1.8;
+    color: #7f8c8d;
+  }
+  
+  /* Skills grid layout */
+  .skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    margin: 0 auto;
+    max-width: 1200px;
+  }
+  
+  /* Individual skill card styling */
+  .skill-card {
+    background: #ffffff;
+    border: 1px solid #ecf0f1;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  /* Card hover effect */
+  .skill-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  }
+  
+  /* Skill card headings */
+  .skill-card h3 {
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+    color: #2c3e50;
+  }
+  
+  /* Skill list styling */
+  .skill-card ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .skill-card ul li {
+    font-size: 1rem;
+    color: #7f8c8d;
+    margin: 8px 0;
+    position: relative;
+    padding-left: 20px;
+  }
+  
+  /* List bullet design */
+  .skill-card ul li::before {
+    content: "✓";
+    position: absolute;
+    left: 0;
+    color: #27ae60;
+    font-weight: bold;
+  }
+  
+  /* Responsive design */
+  @media (max-width: 768px) {
+    .skills-page h2 {
+      font-size: 2.2rem;
+    }
+  
+    .skills-page p {
+      font-size: 1rem;
+    }
+  
+    .skill-card h3 {
+      font-size: 1.5rem;
+    }
+  }
+  
